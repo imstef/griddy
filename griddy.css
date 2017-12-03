@@ -1,0 +1,73 @@
+/* Mobile-first 12-column responsive grid */
+.container, .row {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container:after, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	width: 100%;
+	min-height: 1px;
+}
+
+/* Grid sizes on larger screens */
+@media only screen and (min-width: 55rem) {
+	.container {
+		width: 100%;
+		max-width: 108rem;
+	}
+
+	.col-1 {
+		width: 8.33333%; 
+	}
+
+	.col-2 {
+		width: 16.66667%; 
+	}
+
+	.col-3 {
+		width: 25%; 
+	}
+
+	.col-4 {
+		width: 33.33333%; 
+	}
+
+	.col-5 {
+		width: 41.66667%; 
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+
+	.col-7 {
+		width: 58.33333%; 
+	}
+
+	.col-8 {
+		width: 66.66667%; 
+	}
+
+	.col-9 {
+		width: 75%; 
+	}
+
+	.col-10 {
+		width: 83.33333%; 
+	}
+
+	.col-11 {
+		width: 91.66667%; 
+	}
+
+	.col-12 {
+		width: 100%; 
+	} 
+}
